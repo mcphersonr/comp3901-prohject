@@ -37,6 +37,7 @@ class caseManager():
         notes=self.cursor.fetchall()
         for i in range(0,len(notes)):
             casenotes.append({'source_id':notes[i][0],'notes_id':notes[i][2],'notes':notes[i][1]})
+        print (casestatements,casedescription,casenotes)
         return casestatements,casedescription,casenotes
     
     def updateCaseProcessTable(self,caseid):

@@ -262,7 +262,6 @@ insert into citizen(citizen_id,citizen_fname,citizen_lname,citizen_street,citize
 insert into citizen(citizen_id,citizen_fname,citizen_lname,citizen_street,citizen_parish,citizen_telephone,citizen_signature_path) values (9,'Maria', 'Rodriguez', 'Goshen','St.Elizabeth',6428976,'URL' );
 insert into citizen(citizen_id,citizen_fname,citizen_lname,citizen_street,citizen_parish,citizen_telephone,citizen_signature_path) values (10,'Frances', 'Velez','Dawkins Drive', 'Clarendon',2569714,'URL');
 
-/*
 insert into caserelated(case_id,caserelated_id) values (1,1);
 insert into caserelated(case_id,caserelated_id) values (2,2);
 insert into caserelated(case_id,caserelated_id) values (3,3);

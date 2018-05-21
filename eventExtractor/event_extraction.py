@@ -5,7 +5,6 @@ from eventExtractor.eventDBManger import eventDBManager
 #figure what to do with remaining portions of the sentence
 #how to break sentences without punctuations
 
-
 a="A 25 year-old male was shot and injured Thursday night in the Willowdene area of St. Catherine. "
 a+="Reports from the Spanish Town police are that the young man was walking along Willowdene Drive towards Old Harbour Road where he was approached by two men. "
 a+="One of the men brandished a gun demanded his cellular phone and cash. A tussle ensued and the man was shot."

@@ -54,18 +54,20 @@ class When:
             return daypart
 
     def __datetest(self,sentence,index):
-        part1=sentence[index+1][1]
-        part2=sentence[index+2][1]
-        part3=sentence[index+3][1]
+        try:
+            part1=sentence[index+1][1]
+            part2=sentence[index+2][1]
+            part3=sentence[index+3][1]
 
-        if part1=='CD' and ((part3=='CD' and part2==',') or (part2=='CD')):
-            if part2==',':
-                datepart={'date':sentence[index][0]+" "+sentence[index+1][0]+", "+sentence[index+3][0]}
-                return datepart
-            else:
-                datepart={'date':sentence[index][0]+" "+sentence[index+1][0]+", "+sentence[index+2][0]}
-                return datepart 
-        
+            if part1=='CD' and ((part3=='CD' and part2==',') or (part2=='CD')):
+                if part2==',':
+                    datepart={'date':sentence[index][0]+" "+sentence[index+1][0]+", "+sentence[index+3][0]}
+                    return datepart
+                else:
+                    datepart={'date':sentence[index][0]+" "+sentence[index+1][0]+", "+sentence[index+2][0]}
+                    return datepart 
+        except:
+            'Error'
 
     def __timetest(self,sentence,index):
         a=sentence[index-1][0]

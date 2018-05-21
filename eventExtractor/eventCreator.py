@@ -1,8 +1,8 @@
 import nltk
-from eventExtractor.who import Who
-from eventExtractor.what import What
-from eventExtractor.when import When
-from eventExtractor.where import Where
+from who import Who
+from what import What
+from when import When
+from where import Where
 from nltk.tokenize import word_tokenize
 
 
@@ -24,14 +24,8 @@ class eventCreator:
         whentemp=When(tokensentences)
         wheretemp=Where(whattemp.getwhatpos(),tokensentences)
         event={'who':whotemp.getwho(),'what':whattemp.getwhat(),'when':whentemp.getwhen(),'where':wheretemp.getwhere()}
-        events.append(event)
-    
-    ''''def isComplete(self,sentence,who,what,wherestart,wherestop,event):
-        if wherestart == wherestop:
-            if len(sentence) > who+what:
-                print(sentence[who+what:])
-        else:
-            return 1'''
+        if whotemp.getwho()!='No who found' and whattemp.getwhat()!='No what found':
+            events.append(event)
             
     def __tagWords(self,sentence):
         text=word_tokenize(sentence)

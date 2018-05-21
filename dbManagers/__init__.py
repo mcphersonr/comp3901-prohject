@@ -1,4 +1,4 @@
-import dbcaseManager
+#import dbcaseManager
 #import dbVoicenoteManager 
 #vn=dbVoicenoteManager.voiceNoteManager()
 #vn.fetchUnprocessedVoicenote()
@@ -7,5 +7,5 @@ import dbcaseManager
 #cm=dbcaseManager.caseManager()
 #cm.fetchUnprocessedCases()
 
-rm=dbcaseManager.caseManager()
-rm.fetchUnprocessedReports()
+#rm=dbcaseManager.caseManager()
+#rm.fetchUnprocessedReports()

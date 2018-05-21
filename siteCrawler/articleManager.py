@@ -24,7 +24,7 @@ class articlesManager():
         articles=self.cursor.fetchall()
         newarticles=[]
         for i in range(0,len(articles)):
-            newarticles.append({'cid':articles[i][0],'content':articles[i][1]})
+            newarticles.append({'article_id':articles[i][0],'content':articles[i][1]})
         return newarticles
     
     def updateProcessTable(self,cid):

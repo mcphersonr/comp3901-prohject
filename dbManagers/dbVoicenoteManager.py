@@ -12,7 +12,7 @@ class voiceNoteManager():
         voicenotes=self.cursor.fetchall()
         vnotes=[]
         for i in range(0,len(voicenotes)):
-            vnotes.append({'voice_id':voicenotes[i][0],'voicenote_text':voicenotes[i][1]})
+            vnotes.append({'voicenote_id':voicenotes[i][0],'voicenote_text':voicenotes[i][1]})
         return vnotes
     
     def updateProcessTable(self,vid):

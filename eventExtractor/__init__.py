@@ -1,4 +1,4 @@
-import eventExtractor.eventExtractor
+from eventExtractor import eventExtractor
 run=eventExtractor()
 run.runExtractor()
 
